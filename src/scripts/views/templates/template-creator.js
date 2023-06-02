@@ -60,7 +60,7 @@ const createRestaurantDetailTemplate = ({restaurant}) => `
 `;
 
 const createRestaurantItemTemplate = (restaurant) => `
-  <li class="card">
+  <li class="restaurant-item">
     <div class="city-label"><span class="city-label-text">${
       restaurant.city
     }</span></div>
@@ -68,8 +68,8 @@ const createRestaurantItemTemplate = (restaurant) => `
       data-src="${CONFIG.BASE_IMAGE_MEDIUM_URL + restaurant.pictureId}"
       alt="${restaurant.name}"
     />
-    <div>
-      <a href="#/detail/${restaurant.id}">${restaurant.name}</a>
+    <div class="restaurant-title">
+      <a id="detail-link" href="#/detail/${restaurant.id}">${restaurant.name}</a>
       <p></p>
       <p class="rating"><i class="far fa-star"></i>${restaurant.rating}</p>
       <p>
