@@ -8,7 +8,17 @@ class AppHero extends HTMLElement {
 
     <style>
     .app-hero{
-      background-image: url('images/hero-image_3-large.png');
+      background-image: url("images/hero-image_3-small.png");
+  background-image: 
+    -webkit-image-set(
+        url('images/hero-image_3-small.png') 1x,
+        url('images/hero-image_3-large.png') 2x
+    );
+     background-image: 
+    image-set(
+      url('images/hero-image_3-small.png') 1x,
+      url('images/hero-image_3-large.png') 2x,
+    );
     }
 
     </style>
