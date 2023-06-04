@@ -7,10 +7,15 @@ class AppHero extends HTMLElement {
     this.innerHTML = `
 
     <style>
-    .app-hero{
+   .app-hero{
       background-image: url("images/hero-image_3-large.png");
     }
 
+     @media screen and (min-width: 320px) and (max-width: 425px) {
+        .app-hero{
+      background-image: url("images/hero-image_3-small.png");
+    }
+      }
     </style>
     
        <div class="app-hero">
