@@ -8,7 +8,7 @@ Before(({I}) => {
   I.amOnPage('/#/like');
 });
 
-Scenario('liking one movie', async ({I}) => {
+Scenario('liking one restaurant', async ({I}) => {
   I.seeElement('#restaurant-list');
   pause();
   I.see('', '#restaurant-list');
